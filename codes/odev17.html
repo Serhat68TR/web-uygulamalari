@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serhat Kaya Ödev 17</title>
+</head>
+<body>
+    <input type="text" id="sayi1" placeholder="1.Sayıyı Girin"> <br>
+    <input type="text" id="sayi2" placeholder="2.Sayıyı Girin"> <br>
+    <input type="text" id="sayi3" placeholder="3.Sayıyı Girin">  <br>
+    <input type="text" id="sayi4" placeholder="4.Sayıyı Girin"> <br>
+    <button onclick="toplama_islemi()">Topla</button> <br>
+    <div id="sonuc"></div>
+    <script>
+        function toplama_islemi()
+        {
+            var sayi1=Number(document.getElementById("sayi1").value);
+            var sayi2=Number(document.getElementById("sayi2").value);
+            var sayi3=Number(document.getElementById("sayi3").value);
+            var sayi4=Number(document.getElementById("sayi4").value);
+            var toplam=sayi1+sayi2+sayi3+sayi4;
+            document.getElementById("sonuc").innerHTML = "Girilen Sayıların Toplamı: " + toplam;
+        }
+    </script>
+</body>
+</html>
