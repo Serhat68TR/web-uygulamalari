@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Marmara Bolgesi Pierre Loti Tepesi</title>
+    <script src="js/mapdata.js"></script>
+    <script src="js/countrymap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/icerikler.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/marmara_icerik_css/marmara1.css">
+    <link rel="stylesheet" href="css/marmara.css/js.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="/path/to/cdn/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">TÜRKİYE'NİN TURİSTLİK YERLERİ</div>
+        <ul class="nav-links">
+          <li><a href="index.html">ANASAYFA</a></li>
+          <li class="regions-box">
+            <a href="#">BÖLGELER</a>
+            <div class="additional-links">
+              <a class="link" href="akdeniz_bolgesi.html">AKDENİZ</a>
+              <a class="link" href="dogu_anadolu_bolgesi.html">DOĞU ANADOLU</a>
+              <a class="link" href="ege_bolgesi.html">EGE</a>
+              <a class="link" href="guneydogu_anadolu_bolgesi.html">GÜNEYDOĞU ANADOLU</a>
+              <a class="link" href="ic_anadolu_bolgesi.html">İÇ ANADOLU</a>
+              <a class="link" href="karadeniz_bolgesi.html">KARADENİZ</a>
+              <a class="link" href="marmara_bolgesi.html">MARMARA</a>
+            </div>
+          </li>
+          <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+          <li><a href="iletisim.html">İLETİŞİM</a></li>
+        </ul>
+      </nav>
+  </header>
+  <div class="slider_kutu">
+  <div id="slider">
+    <img src="images/3D animasyon - Barış.gif" alt="Hareketli Resim">
+  </div>
+<div class="resim"><img src="images/placeholder.png" alt=""></div>
+</div>
+  <section>
+    <div class="baslik">İstanbul PİERRE LOTİ TEPESİ</div>
+    <div class="icerik_kutu">
+      <div class="row">
+        <div class="column1" id="column1">
+          <img src="images/pierre_loti_tepesi1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column2" id="column1">
+          <img src="images/pierre_loti_tepesi2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column1" id="column1">
+          <img src="images/pierre_loti_tepesi3.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+      </div>
+      <p>Osmanlı döneminde burada bulunan kahvenin ismi aslında Rabia Hatun Kahvesi’ymiş. Ancak Pierre Loti’nin burada “Aziyade” isimli romanını yazması sonrasında kahve ve tepe kendi adıyla anılır olmuş. Yolu ilk olarak 1876 yılında bir deniz subayı olarak İstanbul’a düşen Pierre Loti’nin kendisini anlattığı romanında geçtiğine göre kendisi burada evli bir kadına aşık olmuş.
+
+        İstanbul’un güzelliğine kendini kaptırıp da, bunu ister fırçasıyla tablolarında, ister kalemle yazılarında dile getiren nice ünlü yabancı sanatçı ve yazar vardır. Ama birçok şöhretli isim arasında adını kalplere gömen tek isim Pierre Loti’dir. Çünkü Pierre Loti Türklere olan sevgisini romantik bir dille kaleme aldığı romanında anlatmasının yanı sıra, kurtuluş mücadelesi yıllarında Avrupa’da yaptığı lobi faaliyetleriyle de işgale karşı çıkarak kurtuluş mücadelesini desteklemiş.
+        
+        İstanbul’da görevli olduğu dönemde Eyüp’te bir ev kiralayan Pierre Loti burada yaşamaya başlar. Türkçeyi öğrenir ve Türkler arasında yaşar. Çoğu zaman tepedeki kahveye çıkarak burada zamanını geçirir. Aşık olduğu kadınla da zaman zaman o dönem gayrimüslimlerin yaşadığı Beyoğlu tarafında gizli olarak görüşme fırsatı bulur.
+        
+        İstanbul’da iki yıl kaldıktan sonra görevi sona eren Pierre Loti Eyüp’ten ayrılmak zorunda kalır. 1879 yılında İstanbul’da yaşadıklarını konu alan “Aziyade” isimli romanı yayımlanır. 1887 yılında tekrar İstanbul’a dönme imkanı bulduğunda ise aşık olduğu kadın vefat etmiştir. Pierre Loti’nin Eski Topkapı Mezarlığı’nda Aziyade’nin kabrini ziyaret ederken çektirdiği bir fotoğraf arşivlerde bulunuyor. Troya Antik Kenti Tarihi
+        <br><br>  
+        Pierre Loti Tepesi Kahvesi
+        Eski bir Türk Mahallesi havasının verildiği bölgede, küçük bir otel, restoran, tarihi kahve, kafeler ve hediyelik eşya dükkanları bulunmakta. Eyüp Sultan Camii tarafından tepeye çıktığınızda ilk olarak tarihi kahvenin bulunduğu yere ulaşıyorsunuz. Buradan içeri kısımlarda ise restoran ve kafelerin bulunduğu diğer alanlar var.
+        
+        Haliç manzarasının en iyi seyredilebildiği tarihi kahvede sıcak ve soğuk içecekler servis ediliyor. Teleferiğin bulunduğu yerde geniş bir seyir terası var. Buradan Haliç’i izleyerek bolca fotoğraf çekebilirsiniz. Ayrıca terasta bulunan seyir dürbünü ile Tarihi Yarımada’yı tepeden izleme imkanına erişebilirsiniz.
+        
+        Tepeye teleferik ile çıkıp inmek seyir açısından ayrıca bir güzellik yaşatıyor. Ancak seferler seyrek yapılabildiğinden özellikle hafta sonları teleferik bekleme kuyrukları oluyor. Pierre Loti Tepesi teleferik ücreti İstanbulkart ile tek basım olarak fiyatlandırılıyor. Eğer isterseniz çıkış sırasında olmasa da inişte taş döşemeli patika yolu tercih edebilirsiniz.
+        
+        Bu patika yol üzerinde Kurtuluş Savaşı’nın önemli komutanlarından Fevzi Çakmak ve Edebiyatçı Necip Fazıl Kısakürek‘in kabirlerini de görebilirsiniz. Ağaçların içinden yapacağınız yürüyüşün size ayrıca güzel geleceğini söyleyebilirim.  
+    <br><br>
+    Pierre Loti Tepesi Yolu
+Pierre Loti Tepesi, Eyüp Sultan ilçesinde, Eyüp Sultan Camii’nin üst tarafında bulunuyor. Tepenin bulunduğu yerden Haliç’in iki yakasını, yani Beyoğlu ve Fatih tarafını görebiliyorsunuz. Haliç’in Tarihi Yarımada tarafında yükselen cami kubbeleri ve minareleri görülmeye değer.
+Toplu taşıma araçlarını kullanarak tepenin bulunduğu yere rahatlıkla ulaşmak mümkün. Toplu taşımayla ulaşmanın en hızlı yolu metrobüs kullanmak. Metrobüs’e bindiğinizde Ayvansaray-Eyüp durağından indikten sonra 15 dakika kadar yürüyerek teleferiğe ulaşabilirsiniz.
+
+Cibali-Alibeyköy Tramvay hattını kullanarak Eyüp Sultan Teleferik durağında inerek ulaşmanız mümkün. Otobüs ile gitmek isterseniz Eyüp Sultan’a giden otobüsleri kullanabilirsiniz. Yenikapı, Edirnekapı veya Eminönü’nden Eyüp Sultan’a giden birçok otobüs hattı bulunmakta.
+
+Kendi aracınızla gitmek isterseniz Eyüp Sultan Camii çevresinde aracınızı park edebileceğiniz ücretli otopark alanları mevcut. Bunun yanı sıra tepenin arka kısmından da özel aracınız ile tesislerin bulunduğu yere ulaşım mümkün.
+    
+    </p>
+    </div>
+  </section>
+  
+  <div class="conteiner">
+    <aside>
+      <div class="aside-baslik">Popüler Yerler <i class="fa-solid fa-fire" style="color: #f02828;"></i></div>
+      <a href="marmara_balat.html">
+      <div class="aside-kutu">
+        <div class="aside-isim">İstanbul-BALAT</div>
+        <img src="images/balat2.jpg" alt="Marmara">
+      </div>
+      </a>
+
+      <a href="icanadolu_anitkabir.html">
+      <div class="aside-kutu">
+        <div class="aside-isim">Ankara-ANITKABİR</div>
+        <img src="images/anitkabir2.jpg" alt="İcAnadolu">
+      </div>
+      </a>  
+
+      <a href="dogu_anadolu_palandoken_kayak_merkezi.html">
+      <div class="aside-kutu">
+        <div class="aside-isim">Erzurum-PALANDÖKEN KAYAK MERKEZİ</div>
+        <img src="images/palandoken_kayak_merkezi2.jpg" alt="DoguAnadolu">
+      </div>
+      </a>
+
+      <a href="marmara_yerebatan_sarnici.html">
+      <div class="aside-kutu">
+        <div class="aside-isim">İstanbul-YEREBATAN SARNICI</div>
+        <img src="images/yerebatan_sarnici2.jpg" alt="Marmara">
+      </div>
+    </a>
+
+<a href="icanadolu_ihlara_vadisi.html">
+      <div class="aside-kutu">
+        <div class="aside-isim">Aksaray-IHLARA VADİSİ</div>
+        <img src="images/ihlara_vadisi2.webp" alt="İcAnadolu">
+      </div>
+    </a>
+
+    <a href="icanadolu_peri_bacalari.html">
+      <div class="aside-kutu">
+        <div class="aside-isim">Nevşehir-PERİ BACALARI</div>
+        <img src="images/peri_bacalari2.jpg" alt="İcAnadolu">
+      </div>
+    </a>
+
+    <a href="guneydogu_anadolu_mardin_kalesi.html">
+      <div class="aside-kutu">
+        <div class="aside-isim">Mardin-MARDİN KALESİ</div>
+        <img src="images/mardin_kalesi2.jpg" alt="GuneyDoguAnadolu">
+      </div>
+    </a>
+
+<a href="icanadolu_mevlana_muzesi.html">
+      <div class="aside-kutu">
+        <div class="aside-isim">Konya-MEVLANA MÜZESİ</div>
+        <img src="images/mevlana_muzesi2.jpg" alt="İcAnadolu">
+      </div>
+    </a>
+    
+    </aside>
+    <article>
+      <div class="article-baslik">Marmara Bölgesi <i class="fa-sharp fa-solid fa-star" style="color: #d8d80b;"></i></div>
+      <div class="article-container">
+
+        <a href="marmara_balat.html">
+      <div class="article-kutu">
+        <div class="article-isim">İstanbul-BALAT</div>
+        <img src="images/balat2.jpg" alt="Marmara">
+      </div>
+    </a>
+
+    <a href="marmara_yerebatan_sarnici.html">
+      <div class="article-kutu">
+        <div class="article-isim">İstanbul-YEREBATAN SARNICI</div>
+        <img src="images/yerebatan_sarnici2.jpg" alt="Marmara">
+      </div>
+    </a>
+
+    <a href="marmara_troya_antik_kenti.html">
+      <div class="article-kutu">
+        <div class="article-isim">Çanakkale-TROYA ANTIK KENTİ</div>
+        <img src="images/troya_antik_kenti2.jpg" alt="Marmara">
+      </div>
+    </a>
+    </div>
+
+    <div class="article-baslik">Ege Bölgesi <i class="fa-sharp fa-solid fa-star" style="color: #d8d80b;"></i></div>
+    <div class="article-container">
+
+      <a href="ege_izmir_saat_kulesi.html">
+    <div class="article-kutu">
+      <div class="article-isim">İzmir-İZMİR SAAT KULESİ</div>
+      <img src="images/saatkulesi2.jpg" alt="Ege">
+    </div>
+  </a>
+
+  <a href="ege_pamukkale_travertenleri.html">
+    <div class="article-kutu">
+      <div class="article-isim">Denizli-PAMUKKALE TRAVERTENLERİ</div>
+      <img src="images/pamukkale_travertenleri2.webp" alt="Ege">
+    </div>
+  </a>
+
+  <a href="ege_dumlupinar_sehitligi.html">
+    <div class="article-kutu">
+      <div class="article-isim">Kütahya-DUMLUPINAR ŞEHİTLİĞİ</div>
+      <img src="images/dumlupinar_sehitligi2.jpeg" alt="Ege">
+    </div>
+  </a>
+  </div>
+
+  <div class="article-baslik">İç Anadolu Bölgesi <i class="fa-sharp fa-solid fa-star" style="color: #d8d80b;"></i></div>
+  <div class="article-container">
+
+    <a href="icanadolu_ihlara_vadisi.html">
+  <div class="article-kutu">
+    <div class="article-isim">Aksaray-IHLARA VADİSİ</div>
+    <img src="images/ihlara_vadisi2.webp" alt="İcAnadolu">
+  </div>
+</a>
+
+<a href="icanadolu_peri_bacalari.html">
+  <div class="article-kutu">
+    <div class="article-isim">Nevşehir-PERİ BACALARI</div>
+    <img src="images/peri_bacalari2.jpg" alt="İcAnadolu">
+  </div>
+</a>
+
+<a href="icanadolu_anitkabir.html">
+  <div class="article-kutu">
+    <div class="article-isim">Ankara-ANITKABİR</div>
+    <img src="images/anitkabir2.jpg" alt="İcAnadolu">
+  </div>
+</a>
+</div>
+
+<div class="article-baslik">Karadeniz Bölgesi <i class="fa-sharp fa-solid fa-star" style="color: #d8d80b;"></i></div>
+<div class="article-container">
+
+  <a href="karadeniz_ataturk_kosku.html">
+<div class="article-kutu">
+  <div class="article-isim">Trabzon-ATATÜRK KÖŞKÜ</div>
+  <img src="images/ataturk_kosku2.jpg" alt="Karadeniz">
+</div>
+</a>
+
+<a href="karadeniz_ballica_magarasi.html">
+<div class="article-kutu">
+  <div class="article-isim">Tokat-BALLICA MAĞARASI</div>
+  <img src="images/ballica_magarasi2.webp" alt="Karadeniz">
+</div>
+</a>
+
+<a href="karadeniz_mavi_gol.html">
+<div class="article-kutu">
+  <div class="article-isim">Giresun-MAVİ GÖL</div>
+  <img src="images/mavi_gol2.jpg" alt="Karadeniz">
+</div>
+</a>
+</div>
+
+<div class="article-baslik">Akdeniz Bölgesi <i class="fa-sharp fa-solid fa-star" style="color: #d8d80b;"></i></div>
+<div class="article-container">
+
+<a href="akdeniz_yilan_kalesi.html">
+<div class="article-kutu">
+<div class="article-isim">Adana-YILAN KALESİ</div>
+<img src="images/yilan_kalesi2.jpg" alt="Akdeniz">
+</div>
+</a>
+<a href="akdeniz_sevgi_adasi.html">
+<div class="article-kutu">
+<div class="article-isim">Adana-SEVGİ ADASI</div>
+<img src="images/sevgi_adasi2.jpg" alt="Akdeniz">
+</div>
+</a>
+
+<a href="akdeniz_deligonuller_konagi.html">
+<div class="article-kutu">
+<div class="article-isim">Kahramanmaraş-Deligönüller Konağı</div>
+<img src="images/deligonuller_konagi2.jpeg" alt="Akdeniz">
+</div>
+</a>
+</div>
+
+<div class="article-baslik">Doğu Anadolu Bölgesi <i class="fa-sharp fa-solid fa-star" style="color: #d8d80b;"></i></div>
+<div class="article-container">
+
+<a href="dogu_anadolu_palandoken_kayak_merkezi.html">
+<div class="article-kutu">
+<div class="article-isim">Erzurum-PALANDÖKEN KAYAK MERKEZİ</div>
+<img src="images/palandoken_kayak_merkezi2.jpg" alt="DoguAnadolu">
+</div>
+</a>
+
+<a href="dogu_anadolu_van_kalesi.html">
+<div class="article-kutu">
+<div class="article-isim">Van-VAN KALESİ</div>
+<img src="images/van_kalesi2.webp" alt="DoguAnadolu">
+</div>
+</a>
+
+<a href="dogu_anadolu_munzur_daglari.html">
+<div class="article-kutu">
+<div class="article-isim">Erzincan-MUNZUR DAĞLARI</div>
+<img src="images/munzur_daglari2.jpg" alt="DoguAnadolu">
+</div>
+</a>
+</div>
+
+<div class="article-baslik">GüneyDoğu Anadolu Bölgesi <i class="fa-sharp fa-solid fa-star" style="color: #d8d80b;"></i></div>
+<div class="article-container">
+
+<a href="guneydogu_anadolu_dicle_koprusu.html">
+<div class="article-kutu">
+<div class="article-isim">Diyarbakir-DİCLE KÖPRÜSÜ</div>
+<img src="images/dicle_koprusu2.jpg" alt="GuneyDoguAnadolu">
+</div>
+</a>
+<a href="guneydogu_anadolu_mardin_kalesi.html">
+<div class="article-kutu">
+<div class="article-isim">Mardin-MARDİN KALESİ</div>
+<img src="images/mardin_kalesi2.jpg" alt="GuneyDoguAnadolu">
+</div>
+</a>
+<a href="guneydogu_anadolu_gaziantep_kalesi.html">
+<div class="article-kutu">
+<div class="article-isim">Gaziantep-GAZİANTEP KALESİ</div>
+<img src="images/gaziantep_kalesi2.jpg" alt="GuneyDoguAnadolu">
+</div>
+</a>
+</div>
+    </article>
+  </div>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/pierre_loti_tepesi1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/pierre_loti_tepesi2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/pierre_loti_tepesi3.jpeg" style="width:100%">
+    </div>
+    
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/pierre_loti_tepesi1.jpg" style="width:100%" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/pierre_loti_tepesi2.jpg" style="width:100%" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/pierre_loti_tepesi3.jpeg" style="width:100%" onclick="currentSlide(3)" >
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="tumhaklarisaklidir">Tüm hakları Serhat'a saklıdır.&copy2023</div> 
+</footer>   
+	</body>
+</html>
+    
+    
+

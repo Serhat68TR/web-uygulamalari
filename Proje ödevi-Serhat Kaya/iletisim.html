@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/iletisim.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <title>MARMARA BOLGESI</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">TÜRKİYE'NİN TURİSTLİK YERLERİ</div>
+          <ul class="nav-links">
+            <li><a href="index.html">ANASAYFA</a></li>
+            <li class="regions-box">
+              <a href="#">BÖLGELER</a>
+              <div class="additional-links">
+                <a class="link" href="akdeniz_bolgesi.html">AKDENİZ</a>
+                <a class="link" href="dogu_anadolu_bolgesi.html">DOĞU ANADOLU</a>
+                <a class="link" href="ege_bolgesi.html">EGE</a>
+                <a class="link" href="guneydogu_anadolu_bolgesi.html">GÜNEYDOĞU ANADOLU</a>
+                <a class="link" href="ic_anadolu_bolgesi.html">İÇ ANADOLU</a>
+                <a class="link" href="karadeniz_bolgesi.html">KARADENİZ</a>
+                <a class="link" href="marmara_bolgesi.html">MARMARA</a>
+              </div>
+            </li>
+            <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+            <li><a href="iletisim.html">İLETİŞİM</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>İLETİŞİM FORMU <i class="fa-solid fa-file-pen" style="color: #1d8dd3;"></i></h1>
+        <div class="geneldiv">
+        <div class="sol">
+        <form action="mail_gonderme.php" method="POST">
+           
+          <div class="isimkutu">
+            <label for="name" class="isim">İsim:</label>
+            <input type="text" id="name" name="name" required><br>
+          </div>
+
+          <div class="emailkutu">
+            <label for="email" class="eposta">E-posta:</label>
+            <input type="email" id="email" name="email" required><br>
+          </div>
+
+          <div class="konukutu">
+            <label for="subject" class="konu">Konu:</label>
+            <input type="text" id="subject" name="subject" required><br>
+          </div>
+
+
+            <div class="solmesaj">
+            <label for="message" class="mesaj">Mesaj:</label>
+            <textarea id="message1" name="message" required></textarea><br>
+            <p id="wordCount1">Kalan kelime sayısı: 150</p>
+            </div>
+
+            <input type="submit" value="Gönder" class="gonder1">
+          </form>
+           </div>
+
+           <div class="sag">
+            <div class="isimkutu">
+              <label for="name" class="isim">İsim:</label>
+              <input type="text" id="name" name="name" required><br>
+            </div>
+  
+            <div class="emailkutu">
+              <label for="email" class="eposta">E-posta:</label>
+              <input type="email" id="email" name="email" required><br>
+            </div>
+  
+            <div class="konukutu">
+              <label for="subject" class="konu">Konu:</label>
+              <input type="text" id="subject" name="subject" required><br>
+            </div>
+  
+  
+              <div class="solmesaj">
+              <label for="message" class="mesaj">Mesaj:</label>
+              <textarea id="message2" name="message" required></textarea><br>
+              <p id="wordCount2">Kalan kelime sayısı: 150</p>
+
+              </div>
+  
+              <input type="submit" value="Gönder" class="gonder1">
+            </form>
+        </div>
+      </div>
+        </div>
+        <iframe style="width: 50%; height: 25vw; margin-left: 25%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.3049010239547!2d29.11742171541241!3d40.95289897930645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac68bbc2a2aa7%3A0x419102a05b857d03!2zxLBzdGFuYnVsIFRpY2FyZXQgw5xuaXZlcnNpdGVzaSBLw7zDp8O8a3lhbMSxIEthbXDDvHPDvA!5e0!3m2!1str!2str!4v1685084175045!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+  
+    <footer class="footer">
+        <div class="tumhaklarisaklidir">Tüm hakları Serhat'a saklıdır.&copy2023</div> 
+      </footer>
+           
+<script>
+  var textarea1 = document.getElementById("message1");
+  var wordCountElement1 = document.getElementById("wordCount1");
+  var maxLength1 = 150; // Metin 1 için maksimum kelime sınırı
+
+  textarea1.addEventListener("input", function() {
+    var text = textarea1.value;
+    var words = text.trim().split(/\s+/);
+    var wordCount = words.length;
+
+    if (wordCount > maxLength1) {
+      var trimmedText = words.slice(0, maxLength1).join(" ");
+      textarea1.value = trimmedText;
+      wordCount = maxLength1;
+    }
+
+    var remainingWords = maxLength1 - wordCount;
+    wordCountElement1.textContent = "Kalan kelime sayısı : " + remainingWords;
+  });
+
+  var textarea2 = document.getElementById("message2");
+  var wordCountElement2 = document.getElementById("wordCount2");
+  var maxLength2 = 150; // Metin 2 için maksimum kelime sınırı
+
+  textarea2.addEventListener("input", function() {
+    var text = textarea2.value;
+    var words = text.trim().split(/\s+/);
+    var wordCount = words.length;
+
+    if (wordCount > maxLength2) {
+      var trimmedText = words.slice(0, maxLength2).join(" ");
+      textarea2.value = trimmedText;
+      wordCount = maxLength2;
+    }
+
+    var remainingWords = maxLength2 - wordCount;
+    wordCountElement2.textContent = "Kalan kelime sayısı : " + remainingWords;
+  });
+</script>
+
+  
+</body>
+</html>
